@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* navbar start */
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: #ffff;
+  box-shadow: 2px 2px 5px 2px rgba(128, 128, 128, 0.164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+nav img {
+  width: 40px;
+}
+
+#select {
+  padding: 0.4rem 1.3rem;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav button {
+  padding: 0.4rem 1.3rem;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* navbar end */
+
+#headingText {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* stack start */
+main {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#parent {
+  width: 100%;
+  height: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* making a plate */
+.innerDiv {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 101px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 9px 9px 14px #a8a8a8, -9px -9px 14px #ffffff;
+}
+
+.stackFlex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stackFlex input {
+  width: 300px;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.stackFlex input:focus {
+  outline: 1px solid #218700;
+  border: 1px solid #218700;
+}
+
+.buttonFlex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.buttonFlex button {
+  padding: 0.7rem 1.3rem;
+  border: 1px solid #218700;
+  color: #ffff;
+  background-color: #218700;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttonFlex button:active {
+  transform: scale(0.9);
+}
+
+.buttonFlex button:nth-child(2) {
+  background-color: transparent;
+  color: rgb(145, 2, 2);
+  border: 1px solid rgb(145, 2, 2);
+}
+/* stack end */
+
+/* footer start */
+footer {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+footer ul li a i {
+  color: #fff;
+  font-size: 1.1rem;
+}
+/* footer end */
+
+/* responsive  */
+@media (max-width: 480px) {
+  .innerDiv {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  #select {
+    padding: 0.3rem 1rem;
+  }
+
+  .stackFlex {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  main {
+    gap: 3rem;
+    margin: 1rem 0;
+  }
+}
